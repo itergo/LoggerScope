@@ -11,6 +11,6 @@ public static class StartupExtension
     }
     public static void AddLoggerScopeService(this IServiceCollection services)
     {
-        services.AddScoped<ILoggerScopeService, LoggerScopeService>();
+        services.AddScoped<ILoggerScope, LoggerScope>();
     }
 }

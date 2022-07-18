@@ -1,6 +1,6 @@
 ﻿namespace LoggerScope;
 
-public interface ILoggerScopeService
+public interface ILoggerScope
 {
     public Dictionary<string, object> Properties { get; }
 }

@@ -1,10 +1,10 @@
 ﻿namespace LoggerScope;
 
-public class LoggerScopeService : ILoggerScopeService
+public class LoggerScope : ILoggerScope
 {
     public Dictionary<string, object> Properties { get; }
 
-    public LoggerScopeService()
+    public LoggerScope()
     {
         Properties = new Dictionary<string, object>();
     }

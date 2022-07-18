@@ -12,7 +12,7 @@ public class LoggerMiddleware
         _next = next;
     }
 
-    public async Task InvokeAsync(HttpContext context, ILogger<LoggerMiddleware> logger, ILoggerScopeService loggerScopeService)
+    public async Task InvokeAsync(HttpContext context, ILogger<LoggerMiddleware> logger, ILoggerScope loggerScopeService)
     {
         using (logger.BeginScope(loggerScopeService.Properties))
         {
